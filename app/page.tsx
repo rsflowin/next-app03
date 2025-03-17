@@ -5,7 +5,7 @@ import { Suspense } from "react";
 export const revalidate = 60;
 
 async function getData() {
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  // await new Promise((resolve) => setTimeout(resolve, 1000));
 
   const data = await prisma.blogPost.findMany({
     select: {
