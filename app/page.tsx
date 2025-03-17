@@ -2,6 +2,8 @@ import { prisma } from "@/app/utils/db";
 import { BlogPostCard } from "@/components/general/BlogPostCard";
 import { Suspense } from "react";
 
+export const revalidate = 60;
+
 async function getData() {
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
