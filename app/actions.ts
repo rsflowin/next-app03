@@ -5,8 +5,6 @@ import { prisma } from "./utils/db";
 import { redirect } from "next/navigation";
 
 export async function handleSubmission(formData: FormData) {
-    // await new Promise((resolve) => setTimeout(resolve, 1000));
-
     const {getUser} = getKindeServerSession();
     const user = await getUser();
 
